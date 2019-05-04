@@ -1,1 +1,1 @@
-Data generator of ESC50 Dataset.
+Data storage of ESC50 Dataset.

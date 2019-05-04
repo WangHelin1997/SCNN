@@ -1,3 +1,8 @@
+"""
+    Draw time and Logmel spectrogram for audio through single filter.
+
+"""
+
 import os
 import pickle
 import matplotlib.pyplot as plt

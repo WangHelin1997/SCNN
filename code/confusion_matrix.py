@@ -1,3 +1,8 @@
+""" Display confusion matrix figures. (eg. : ESC50)
+    usage:
+    python confusion_matrix.py
+"""
+
 import numpy as np
 from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
@@ -18,6 +23,7 @@ for i in range(len(labelx)):
     label.append(id_to_lb(labelx[i]))
 tick_marks = np.array(range(len(label))) + 0.5
 
+# #DCASE2018 Task1:
 # label = [0,1,2,3,4,5,6,7,8,9]
 # label = np.array(label)
 # label = ['airport','shopping_mall','metro_station', 'street_pedestrian','public_square', 'street_traffic','tram', 'bus','metro', 'park']
@@ -34,6 +40,7 @@ def plot_confusion_matrix(cm, title='Confusion Matrix', cmap=plt.cm.binary):
     # plt.xlabel('Predicted label')
 
 cm = confusion_matrix(true, pred)
+# #DCASE2018 Task1:
 # cm = [[218,118,17,52,6,6,4,0,0,0],
 #       [49,271,40,66,14,0,0,0,0,1],
 #       [19,42,281,11,11,4,20,14,33,0],
@@ -65,6 +72,7 @@ plt.gca().xaxis.set_ticks_position('none')
 plt.gca().yaxis.set_ticks_position('none')
 plt.grid(True, which='minor', linestyle='-')
 plt.gcf().subplots_adjust(bottom=0.15)
+# #DCASE2018 Task1:
 # plot_confusion_matrix(cm_normalized, title='Normalized confusion matrix on DCASE Task1')
 plot_confusion_matrix(cm_normalized, title='Normalized confusion matrix on ESC-50')
 # show confusion matrix

@@ -1,3 +1,8 @@
+"""	draw time and frequency response for single filter 
+	draw cumulative frequency response for all filters
+	2d Display.
+"""
+
 import matplotlib.pyplot as plt
 import numpy as np
 from data_process import *

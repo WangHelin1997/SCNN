@@ -1,6 +1,6 @@
 """ usage:
     python main.py
-    python main.py --network=WaveMsNet --mode=test --model='../model/dnn_mix.pkl'
+    python main.py --network=WaveMsNet --mode=test --model='../model/dnn_mix.pkl' ... ...
 
 """
 import argparse

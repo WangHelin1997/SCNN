@@ -1,3 +1,7 @@
+"""
+    network for SCNN
+"""
+
 import torch
 import torch.nn.functional as F
 import torch.nn as nn
@@ -21,7 +25,8 @@ def flip(x, dim):
                       -1, -1), ('cpu','cuda')[x.is_cuda])().long(), :]
     return x.view(xsize)
 
-
+#fast SincConv layer.
+#Use this instead of Sincconv.
 class SincConv_fast(nn.Module):
     """Sinc-based convolution
     Parameters

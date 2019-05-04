@@ -1,3 +1,7 @@
+"""Draw frequency response of all filters.
+   3d display.
+"""
+
 from mpl_toolkits.mplot3d import axes3d
 from matplotlib import cm
 import matplotlib.pyplot as plt

@@ -1,3 +1,8 @@
+""" Display waveform and logmel-spectrogram figures.
+    usage:
+    python check.py
+"""
+
 import os
 import pickle
 import matplotlib.pyplot as plt
